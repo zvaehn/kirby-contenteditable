@@ -24,7 +24,7 @@ $ git commit -am "Added Kirby Plugin: contenteditable"
 ### Setup
 Add the plugin assets to you footer-snippet:
 
-```
+```php
 <?php contenteditableassets($kirby) ?>
 ```
 
