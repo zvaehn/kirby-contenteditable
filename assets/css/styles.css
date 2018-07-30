@@ -1,0 +1,89 @@
+[data-bp-field] {
+
+}
+
+[data-bp-field]:hover {
+  cursor: text;
+  position: relative;
+  border: 1px dotted lightgray;
+}
+
+[data-bp-field]:after {
+  position: absolute;
+}
+
+[data-bp-field]:focus {
+  border: 1px solid lightgray;
+  border-color: rgb(59, 153, 252);
+  background-color: #F7F7F7;
+  outline: none;
+}
+
+[data-bp-field].is-valid:focus {
+  border-color: green;
+}
+
+[data-bp-field].is-invalid:focus {
+  border-color: red;
+}
+
+[data-bp-field]:hover:after {
+  /* content: 'Edit'; */
+}
+
+
+.contenteditable-controls {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: block;
+  /* transform: translateY(100px); */
+  bottom: 25px;
+  transition-property: transform, opacity;
+  transition-duration: .3s;
+  opacity: 0;
+  z-index: 10;
+  /* pointer-events: none; */
+}
+
+.contenteditable-controls.is-visible {
+  /* transform: translateY(0); */
+  bottom: 25px;
+  opacity: 1;
+  /* pointer-events: inherit; */
+}
+
+.button-save:hover, .button-dismiss:hover {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.button-save, .button-dismiss {
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-duration: .3s;
+  transform-origin: center center;
+  z-index: 11;
+  border: none;
+  background: none;
+  padding: none;
+  color: inherit;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+.button-save {
+  background-color: rgb(53, 175, 109);
+  border: 2px solid rgb(53, 175, 109);
+  /* box-shadow: 2px 2px 6px rgb(53, 175, 109); */
+}
+
+.button-dismiss {
+  background-color: rgb(240, 69, 84);
+  border: 2px solid rgb(240, 69, 84);
+  /* box-shadow: 2px 2px 6px rgb(240, 69, 84); */
+}
