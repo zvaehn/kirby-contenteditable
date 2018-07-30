@@ -1,7 +1,7 @@
 <?php
 
 /* Todos:
-- Multilanguage
+- Multilanguage?
 - String parsing
 - WYSIWYG
 */
